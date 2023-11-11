@@ -1,0 +1,10 @@
+name: MultiSignBook
+version: 1.0
+main: org.tokishu.multisignbook.multisignbook.MultiSignBook
+api-version: 1.20
+description: https://github.com/Tok1shu/MultiSignBook/
+author: Tokishu
+commands:
+  sign:
+    description: Main command for signing books
+    usage: /sign <lock|s>
