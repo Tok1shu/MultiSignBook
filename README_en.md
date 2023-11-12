@@ -25,6 +25,32 @@ MultiSignBook provides formality for role-playing servers, and it does not regul
 - Use `/sign lock` to protect the contract from additional signatures.
 - Use `/sign s` to add your signature to the contract.
 
+## Default `config.yml`
+```
+# MultiSignBook
+settings:
+  max_signatures: 8
+
+# Messages
+# Use "§" to set chat color
+messages:
+  book_locked: "§cThis book is already protected from signatures."
+  book_already_signed: "§cYou have already signed this book."
+  book_max_signatures: "§cThe book already contains the maximum number of signatures."
+  book_protected: "§aThe book has been successfully protected from signatures."
+  signature_added: "§aSignature successfully added."
+  book_locked_cannot_sign: "§cYou cannot sign this book; it is protected from signatures."
+  invalid_command: "§cUse /sign lock to protect from signatures or /sign s to add a signature."
+  not_signed_book: "§cHold a signed book in your hand to execute /sign commands."
+  invalid_command_console: "§cInvalid command. Use /sign lock or /sign s."
+
+# Lore headers in the book
+# It is not recommended to change them if the books on the server have been signed; this may break them.
+lore:
+  locked: "§cProtected: "
+  signed: "§7Signed: "
+```
+
 ## Contribution
 Feel free to contribute to the development of MultiSignBook! Fork this repository, make changes, and submit a pull request.
 
